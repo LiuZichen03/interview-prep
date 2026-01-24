@@ -1,11 +1,13 @@
 #include <iostream>
-#include "dsu.h"
+#include "string.h"
 
-int main() {
-    DSU dsu(5);
-    dsu.unite(0, 1);
-    dsu.unite(3, 4);
-    std::cout << (dsu.same(0, 1) ? "yes" : "no") << "\n";
-    std::cout << (dsu.same(1, 2) ? "yes" : "no") << "\n";
-    return 0;
+int main() 
+{
+    String s1;
+    String s2("hello");
+    String s3(s2);
+    String *p = new String("helllo");
+    s1 = *p;
+    std::cout<<s3<<std::endl;
+    std::cout<<s1<<std::endl;
 }
