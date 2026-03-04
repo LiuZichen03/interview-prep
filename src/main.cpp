@@ -8,6 +8,7 @@ int main()
     String s3(s2);
     String *p = new String("helllo");
     s1 = *p;
+    delete p;
     std::cout<<s3<<std::endl;
     std::cout<<s1<<std::endl;
 }
